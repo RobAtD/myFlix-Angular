@@ -1,0 +1,12 @@
+{
+    "htmlhint.options": {
+        "attr-lowercase": [
+            "ngIf",
+            "ngFor",
+            "ngSwitch",
+            "ngModel",
+            "[(ngModel)]",
+            "matInput"
+        ],
+    }
+}
