@@ -3,10 +3,13 @@
         "attr-lowercase": [
             "ngIf",
             "ngFor",
+            "*ngFor",
             "ngSwitch",
             "ngModel",
             "[(ngModel)]",
-            "matInput"
+            "matInput",
+            "gutterSize",
+            "rowHeight"
         ],
     }
 }

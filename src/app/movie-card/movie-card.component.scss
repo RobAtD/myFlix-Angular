@@ -1,0 +1,40 @@
+.movie-grid {
+    display: grid;
+    grid: auto / auto auto auto;
+    gap: 20px;
+    padding: 20px 20px;
+    margin: auto;
+}
+
+.movie-card {
+    background-color: rgb(128, 0, 0, 1);
+    color: white;
+
+    button {
+        color: white;
+    }
+}
+
+@media (max-width: 530px) {
+    .movie-grid {
+        grid: auto / auto;
+    }
+}
+
+@media (min-width: 531px) {
+    .movie-grid {
+        grid: auto / auto auto;
+    }
+}
+
+@media (min-width: 801px) {
+    .movie-grid {
+        grid: auto / auto auto auto;
+    }
+}
+
+@media (min-width: 1051px) {
+    .movie-grid {
+        grid: auto / auto auto auto auto;
+    }
+}
