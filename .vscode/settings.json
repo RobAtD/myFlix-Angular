@@ -9,7 +9,9 @@
             "[(ngModel)]",
             "matInput",
             "gutterSize",
-            "rowHeight"
+            "rowHeight",
+            "*ngIf",
+            "routerLink"
         ],
     }
 }
