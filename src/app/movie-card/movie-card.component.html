@@ -7,10 +7,10 @@
       </mat-card-header>
       <img style="width: 100%; height: 80%; object-fit: contain;" src="{{ movie.ImageURL }}" />
       <mat-card-actions>
-        <button mat-button color="primary">Genre</button>
-        <button mat-button color="primary">Director</button>
-        <button mat-button color="primary">Synopsis</button>
-        <mat-icon>favorite_border</mat-icon>
+        <button mat-button color="primary" (click)="openGenreDialog(movie.Genre)">Genre</button>
+        <button mat-button color="primary" (click)="openDirectorDialog(movie.Director)">Director</button>
+        <button mat-button color="primary" (click)="openMovieDetailsDialog(movie)">Details</button>
+        <button mat-button (click)="handleFavorite(movie._id)"><mat-icon>{{isFavorite(movie._id) ? "favorite" : "favorite_border"}}</mat-icon></button>
       </mat-card-actions>
     </mat-card>
 </div>

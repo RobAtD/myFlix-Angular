@@ -19,10 +19,17 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { RouterModule, Routes } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { UserProfileViewComponent } from './user-profile-view/user-profile-view.component';
+import { DirectorDialogComponent } from './director-dialog/director-dialog.component';
+import { GenreDialogComponent } from './genre-dialog/genre-dialog.component';
+import { MovieDetailsDialogComponent } from './movie-details-dialog/movie-details-dialog.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
+  { path: 'profile', component: UserProfileViewComponent },
+
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 
@@ -33,6 +40,10 @@ const appRoutes: Routes = [
     UserLoginFormComponent,
     MovieCardComponent,
     WelcomePageComponent,
+    UserProfileViewComponent,
+    DirectorDialogComponent,
+    GenreDialogComponent,
+    MovieDetailsDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +59,8 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes),
     MatIconModule,
-    MatGridListModule
+    MatGridListModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent],
