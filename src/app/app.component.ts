@@ -21,6 +21,9 @@ export class AppComponent {
     })
   }
 
+  /**
+   * Method to logout a user
+   */
   logout(): void {
     // clear local storage
     localStorage.clear();

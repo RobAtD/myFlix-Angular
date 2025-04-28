@@ -35,9 +35,9 @@ export class MovieCardComponent implements OnInit {
   }
 
   /**
-   * Checks if a movie is favorite
+   * Checks if a movie is a favorite
    * @param movieId ID of the movie to check
-   * @returns True if the movie is favorite, false otherwise
+   * @returns True if the movie is a favorite, false otherwise
    */
   isFavorite(movieId: string): boolean {
     const localUser: string | null = localStorage.getItem('user');
@@ -90,7 +90,7 @@ export class MovieCardComponent implements OnInit {
 
   /**
    * Method to open the dialog with informations about a director
-   * @param director The director informations
+   * @param director The director informations object
    */
   openDirectorDialog(director: any): void {
     this.dialog.open(DirectorDialogComponent, {
@@ -101,7 +101,7 @@ export class MovieCardComponent implements OnInit {
 
   /**
    * Method to open the dialog with informations about a genre
-   * @param genre The genre informations
+   * @param genre The genre informations object
    */
   openGenreDialog(genre: any): void {
     this.dialog.open(GenreDialogComponent, {
@@ -112,7 +112,7 @@ export class MovieCardComponent implements OnInit {
 
   /**
    * Method to open the dialog with informations about a movie
-   * @param movie The movie informations
+   * @param movie The movie informations object
    */
   openMovieDetailsDialog(movie: any): void {
     this.dialog.open(MovieDetailsDialogComponent, {
